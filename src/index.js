@@ -1,13 +1,17 @@
-import _ from 'lodash';
+import _ from 'lodash'
+import $ from 'jquery'
+import * as NO1 from './main'
+import './index.css'
 
+NO1.sayHi()
 
   function component() {
-    var element = document.createElement('div');
+    var $div = $('<div/>')
 
    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+   $div.html ( _.join(['Hello', 'webpack'], ' ') )
 
-    return element;
+    return $div
   }
 
-  document.body.appendChild(component());
+  $(document.body).append(component())
