@@ -10,5 +10,8 @@
   "description": "",
   "devDependencies": {
     "webpack": "^3.5.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
   }
 }
